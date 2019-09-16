@@ -20,6 +20,7 @@ The `logger` object is just a `winston.Logger`.
 
 ## Environment variables
 
+- `APP_NAME`: the application/service name (set on logs)
 - `LOG_LEVEL`: one of the `LogLevel` values
 - `NODE_ENV`: the Node.JS environment (`test`, `production`, etc.)
 
