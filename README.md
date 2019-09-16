@@ -13,7 +13,7 @@ npm i --save log-config
 ```typescript
 import { LogLevel, logger } from 'log-config'
 
-logger.log(LogLevel.INFO, 'simple log example')
+logger.log(LogLevel.INFO, 'simple log example', { /* some extra data */ })
 ```
 
 The `logger` object is just a `winston.Logger`.
