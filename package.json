@@ -1,0 +1,40 @@
+{
+  "name": "log-config",
+  "version": "1.0.0",
+  "description": "Preconfigured Logger",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "clean": "rm -f *.js; find $(find . -type d -depth 1 | grep -v '/\\.' | grep -v node_modules) -name \"*.js\" -delete",
+    "test": "npm run build && mocha --reporter dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cacilhas/log-config.git"
+  },
+  "keywords": [
+    "logger",
+    "helper"
+  ],
+  "author": "Rodrigo Cacilhas <batalema@cacilhas.info>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/cacilhas/log-config/issues"
+  },
+  "homepage": "https://github.com/cacilhas/log-config#readme",
+  "dependencies": {
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.6.8",
+    "@types/winston": "^2.4.4",
+    "chai": "^4.2.0",
+    "lodash": "^4.17.15",
+    "mocha": "^6.2.0",
+    "should": "^13.2.3",
+    "sinon": "^7.4.2",
+    "typescript": "^3.6.3"
+  }
+}
