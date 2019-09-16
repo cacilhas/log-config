@@ -15,6 +15,8 @@ export enum LogLevel {
 
 function getLevel(): string {
   const level = process.env.LOG_LEVEL
+    ? process.env.LOG_LEVEL.trim().toLocaleLowerCase()
+    : null
   switch (process.env.NODE_ENV) {
     case 'test':
       return LogLevel.EMERG
