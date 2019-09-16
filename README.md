@@ -13,8 +13,10 @@ npm i --save log-config
 ```typescript
 import { LogLevel, logger } from 'log-config'
 
-log.log(LogLevel.INFO, 'simple log example')
+logger.log(LogLevel.INFO, 'simple log example')
 ```
+
+The `logger` object is just a `winston.Logger`.
 
 ## Environment variables
 
@@ -23,7 +25,7 @@ log.log(LogLevel.INFO, 'simple log example')
 
 ## `LogLevel`
 
-The valid log levels are:
+The `LogLevel` is an enumerator. The valid log level keys are:
 
 - `ALERT`
 - `CRIT` or `CRITICAL`
